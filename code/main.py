@@ -6,3 +6,7 @@ def main():                                        # main function that runs the
 
     data = input("Enter text or URL to generate QR: ").strip()
                                                    # .strip() removes unnecessary spaces from beginning and end
+    if not data:                                   # if the user enters nothing
+        print("Error: Input cannot be empty.")
+        return                                     # stop the execution
+
