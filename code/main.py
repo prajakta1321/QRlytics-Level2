@@ -10,3 +10,10 @@ def main():                                        # main function that runs the
         print("Error: Input cannot be empty.")
         return                                     # stop the execution
 
+   try:                                           # call the qr generator function and store the returned filename
+        filename = generate_qr(data)
+        print(f"\n QR Code generated successfully!")
+        print(f"Saved as: {filename}")
+
+    except Exception as e:
+        print(f"Error: {e}")
