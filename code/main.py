@@ -17,3 +17,7 @@ def main():                                        # main function that runs the
 
     except Exception as e:
         print(f"Error: {e}")
+
+# this ensures the script runs only when executed directly and not when imported as a module.
+if __name__ == "__main__":
+    main()
