@@ -1,3 +1,4 @@
+# new
 import streamlit as st 
 
 from qr_generator import generate_qr
