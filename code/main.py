@@ -1,3 +1,4 @@
+# new 
 from qr_generator import generate_qr               # Import generate_qr function from qr_generator file
 from utils import is_valid_url                     # Import URL validation function (used later if needed)
 
@@ -10,7 +11,7 @@ def main():                                        # main function that runs the
         print("Error: Input cannot be empty.")
         return                                     # stop the execution
 
-   try:                                           # call the qr generator function and store the returned filename
+    try:                                           # call the qr generator function and store the returned filename
         filename = generate_qr(data)
         print(f"\n QR Code generated successfully!")
         print(f"Saved as: {filename}")
