@@ -11,3 +11,13 @@ def generate_qr(data, fill_color='black', back_color='white'):  # this function 
     
     if not data.strip():             # check if the input is empty or just spaces                                 
         raise ValueError("input cannot be empty.")   # raise error if the user enters empty input.
+    # create a qRcode object with configuration
+    qr = qrcode.QRCode(
+        version = None,    # automatically determines QR size based on input length.
+        error_correction=qrcode.constants.ERROR_CORRECT_M,  # error_correct_M allows ~15% of qr to be damaged but still readable
+        box_size=10,        # the size of each small box in the qr grid.
+        border = 4,)        # thickness of white border around qr(standard = 4)
+    
+    qr.add_data(data)       # add user_input data to qr object
+    qr.make(fit=True)       # generate qr layout (fit=True adjusts size automatically)
+
