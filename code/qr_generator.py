@@ -21,3 +21,4 @@ def generate_qr(data, fill_color='black', back_color='white'):  # this function 
     qr.add_data(data)       # add user_input data to qr object
     qr.make(fit=True)       # generate qr layout (fit=True adjusts size automatically)
 
+    img = qr.make_image(fill_color = fill_color, back_color=back_color)   # convert qr object into an actual image
