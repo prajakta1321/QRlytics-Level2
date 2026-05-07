@@ -22,3 +22,8 @@ def generate_qr(data, fill_color='black', back_color='white'):  # this function 
     qr.make(fit=True)       # generate qr layout (fit=True adjusts size automatically)
 
     img = qr.make_image(fill_color = fill_color, back_color=back_color)   # convert qr object into an actual image
+
+    # create unqiue filenames into date and time
+    filename = f"qr_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
+    img.save(filename)  # save image file in current directory
+    return filename     # return the filename so main.py can display it
