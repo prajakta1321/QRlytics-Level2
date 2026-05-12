@@ -6,3 +6,4 @@ def is_valid_url(url):   # this function checks whether the given string looks l
         r'([a-zA-Z0-9.-]+)\.([a-zA-Z]{2,6})'   # domain extension like .cpm, .org
         r'(\/\S*)?$'        # optional path after domain
     )
+    return re.match(pattern, url)    # checks if the input matches the patter; returns True if url matches pattern, other wise false
