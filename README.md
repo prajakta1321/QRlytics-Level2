@@ -9,3 +9,5 @@ It allows users to generate QR codes from text or URLs with real-time preview, d
 ### Core Features
 - Generate QR codes from text or URLs
 - Real-time QR preview
+- Download generated QR as PNG
+- Timestamp-based unique filenames
