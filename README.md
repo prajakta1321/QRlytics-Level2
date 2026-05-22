@@ -17,3 +17,5 @@ It allows users to generate QR codes from text or URLs with real-time preview, d
 ####  Customization Features
 - Custom QR color selection
 - Custom background color selection
+
+### Architecture Features
