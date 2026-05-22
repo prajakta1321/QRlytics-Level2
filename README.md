@@ -19,3 +19,4 @@ It allows users to generate QR codes from text or URLs with real-time preview, d
 - Custom background color selection
 
 ### Architecture Features
+- Modular project structure
