@@ -20,3 +20,4 @@ It allows users to generate QR codes from text or URLs with real-time preview, d
 
 ### Architecture Features
 - Modular project structure
+- Reusable QR generation logic
