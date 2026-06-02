@@ -21,3 +21,5 @@ It allows users to generate QR codes from text or URLs with real-time preview, d
 - Modular project structure
 - Reusable QR generation logic
 - Separate UI and business logic layers
+
+## Tech Stack
