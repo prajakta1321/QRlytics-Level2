@@ -24,6 +24,7 @@ It allows users to generate QR codes from text or URLs with real-time preview, d
 
 ## Tech Stack
 - Python
+- VScode
 
 Demonstration :
 
